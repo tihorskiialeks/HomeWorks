@@ -19,3 +19,6 @@ delete j element;
 output list to the screen.
 
 Abstract class Figure contains abstract methods, which are implemented in the child classes: circle, rectangle and triangle.
+
+Class MathUtil contains abstract methods.
+Class MathUtiltest contains JUnit tests for MathUtil methods
