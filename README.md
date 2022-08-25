@@ -11,3 +11,9 @@ Class Matrix cotnains methods:
 Class Vector
 contains the array, that could be increased when added element is the last in the array.
 
+Class LinkedList contains methods:
+clear list;
+add the element to the list;
+get j element;
+delete j element;
+output list to the screen.
