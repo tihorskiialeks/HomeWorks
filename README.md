@@ -17,3 +17,5 @@ add the element to the list;
 get j element;
 delete j element;
 output list to the screen.
+
+Abstract class Figure contains abstract methods, which are implemented in the child classes: circle, rectangle and triangle.
