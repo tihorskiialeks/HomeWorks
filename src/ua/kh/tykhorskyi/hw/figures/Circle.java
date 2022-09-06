@@ -25,12 +25,9 @@ public class Circle extends Figure {
 		return super.toString() + " radius = " + radius;
 	}
 
-
 	@Override
 	public void scale(int koef) {
 		radius = radius * koef;
-		// 3) абстрактный метод масштабирования - умножения значений координат на
-		// масштабный коэффициент.
 	}
 
 	@Override
@@ -45,8 +42,7 @@ public class Circle extends Figure {
 		return false;
 	}
 
-	public boolean isCircleInCircle(Circle circle) { // let`s imagine that dot from previous task
-														// is the center of the 2nd circle
+	public boolean isCircleInCircle(Circle circle) {
 		if ((x - circle.x) * (x - circle.x) + (y - circle.y) * (y - circle.y)
 				+ (circle.radius * circle.radius) <= (radius * radius)) {
 			return true;
