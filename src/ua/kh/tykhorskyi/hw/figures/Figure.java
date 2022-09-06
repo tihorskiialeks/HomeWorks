@@ -5,7 +5,6 @@ public abstract class Figure {
 	protected int y;
 
 	public int getX() {
-
 		return x;
 	}
 
@@ -33,26 +32,25 @@ public abstract class Figure {
 		return "x coordinate = " + x + " " + "y coordinate = " + y;
 	}
 
-//		
 	public void move(int horizontCoef, int vertucalCoef) {
 		x = x + horizontCoef;
 		y = y + vertucalCoef;
 	}
 
-	public boolean isDotInCircle(double x1, double y1) {
+	public boolean isInside(double x1, double y1) {
 		return false;
 	}
 
-	public boolean isCircleInCircle(Circle circle) {
+	public boolean isInside(Circle circle) {
 		return false;
+	}
+
+	public void print() {
+		System.out.println(this);
 	}
 
 	public abstract void scale(int coef);
 
 	public abstract double area();
-
-	public void print() {
-		System.out.println(this);
-	}
 
 }
