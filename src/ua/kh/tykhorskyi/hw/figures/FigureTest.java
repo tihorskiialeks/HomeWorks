@@ -34,15 +34,15 @@ public class FigureTest {
 		System.out.println("");
 
 		fig3.print();
-		System.out.println("Is the dot inside the circle? " + fig3.isDotInCircle(3, 5));
-		System.out.println("Is the circle1 inside the circle? " + fig3.isCircleInCircle((Circle) fig5));
+		System.out.println("Is the dot inside the circle? " + fig3.isInside(3, 5));
+		System.out.println("Is the circle1 inside the circle? " + fig3.isInside((Circle) fig5));
 		fig3.area();
 		fig3.scale(2);
 		fig3.move(4, 6);
 		fig3.print();
 
-		System.out.println("Is the dot inside the circle? " + fig3.isDotInCircle(3, 5));
-		System.out.println("Is the circle1 inside the circle? " + fig3.isCircleInCircle((Circle) fig5));
+		System.out.println("Is the dot inside the circle? " + fig3.isInside(3, 5));
+		System.out.println("Is the circle1 inside the circle? " + fig3.isInside((Circle) fig5));
 
 	}
 
