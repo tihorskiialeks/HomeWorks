@@ -78,7 +78,7 @@ public class MathUtil {
 	}
 
 	/**
-	 * Method shows the biggest digit between three;
+	 * Method shows the biggest digit in three-digit number;
 	 * 
 	 * @param
 	 * @return the biggest digit;
