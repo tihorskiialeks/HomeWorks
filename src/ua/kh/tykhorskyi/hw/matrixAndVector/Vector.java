@@ -1,7 +1,5 @@
 package ua.kh.tykhorskyi.hw.matrixAndVector;
 
-import java.util.Arrays;
-
 public class Vector<T extends Object> {
 
 	public static final int DEFAULT_LENGHT = 10;
@@ -32,6 +30,7 @@ public class Vector<T extends Object> {
 
 	public void clear() {
 		count = 0;
+		this.array = (T[]) new Object[DEFAULT_LENGHT];
 	}
 
 	public T getElement(int j) {
@@ -42,13 +41,17 @@ public class Vector<T extends Object> {
 		array[count] = j;
 		count++;
 		if (count == array.length) {
-			T[] array1 = (T[]) new Object[array.length + DEFAULT_LENGHT];
-			for (int i = 0; i < array.length; i++) {
-				array1[i] = array[i];
-
-			}
-			this.array = array1;
+			increaseArray();
 		}
+	}
+
+	private void increaseArray() {
+		T[] array1 = (T[]) new Object[array.length + DEFAULT_LENGHT];
+		for (int i = 0; i < array.length; i++) {
+			array1[i] = array[i];
+
+		}
+		this.array = array1;
 	}
 
 	public void deleteElement(int j) {
@@ -57,15 +60,18 @@ public class Vector<T extends Object> {
 		}
 		count--;
 		if (count % 10 == 0) {
-			T[] array1 = (T[]) new Object[array.length - DEFAULT_LENGHT];
-			for (int i = 0; i < array1.length; i++) {
-				array1[i] = array[i];
-			}
-			this.array = array1;
+			decreaseArray();
 		}
 	}
+	private void decreaseArray() {
+		T[] array1 = (T[]) new Object[array.length - DEFAULT_LENGHT];
+		for (int i = 0; i < array1.length; i++) {
+			array1[i] = array[i];
+		}
+		this.array = array1;
+	}
 
-	public void vectorToScreen() {
+	public void toScreen() {
 		System.out.println(this);
 	}
 }

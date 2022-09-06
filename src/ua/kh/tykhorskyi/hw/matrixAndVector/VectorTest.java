@@ -16,12 +16,15 @@ public class VectorTest {
 		vec.add(10);
 		vec.add(11);
 
-		vec.vectorToScreen();
+		vec.toScreen();
 		System.out.println(vec.getElement(0));
 		vec.deleteElement(2);
-		vec.vectorToScreen();
+		vec.toScreen();
 		vec.clear();
-		vec.vectorToScreen();
+		vec.add(9);
+		vec.add(10);
+		vec.add(11);
+		vec.toScreen();
 
 		Vector<String> strVec = new Vector<String>();
 		strVec.add("one");
@@ -36,12 +39,12 @@ public class VectorTest {
 		strVec.add("ten");
 		strVec.add("eleven");
 
-		strVec.vectorToScreen();
+		strVec.toScreen();
 		System.out.println(strVec.getElement(5));
 		strVec.deleteElement(2);
-		strVec.vectorToScreen();
+		strVec.toScreen();
 		strVec.clear();
-		strVec.vectorToScreen();
+		strVec.toScreen();
 	}
 
 }
