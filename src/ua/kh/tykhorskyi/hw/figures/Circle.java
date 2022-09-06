@@ -35,14 +35,14 @@ public class Circle extends Figure {
 		return PI * (radius * radius);
 	}
 
-	public boolean isDotInCircle(double x1, double y1) {
+	public boolean isInside(double x1, double y1) {
 		if ((x - x1) * (x - x1) + (y - y1) * (y - y1) <= (radius * radius)) {
 			return true;
 		}
 		return false;
 	}
 
-	public boolean isCircleInCircle(Circle circle) {
+	public boolean isInside(Circle circle) {
 		if ((x - circle.x) * (x - circle.x) + (y - circle.y) * (y - circle.y)
 				+ (circle.radius * circle.radius) <= (radius * radius)) {
 			return true;
