@@ -24,7 +24,7 @@ public abstract class Figure {
 	public Figure() {
 	}
 
-	public Figure(int x, int y) {// constructor with parameters
+	public Figure(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
