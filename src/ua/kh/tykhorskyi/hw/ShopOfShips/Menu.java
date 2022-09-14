@@ -1,4 +1,4 @@
-package ua.kh.tykhorskyi.hw.lesson8;
+package ua.kh.tykhorskyi.hw.ShopOfShips;
 
 import java.util.Scanner;
 
