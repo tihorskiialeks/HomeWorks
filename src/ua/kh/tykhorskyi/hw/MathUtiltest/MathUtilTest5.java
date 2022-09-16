@@ -3,7 +3,6 @@ package ua.kh.tykhorskyi.hw.MathUtiltest;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-
 import ua.kh.tykhorskyi.hw.mathUtil.*;
 
 class MathUtilTest5 {
@@ -34,11 +33,6 @@ class MathUtilTest5 {
 		MathUtil.sortArray(array5);
 		int[] expectedArray5 = { -6, 9, 9, 10, 14, 14 };
 		Assertions.assertArrayEquals(array5, expectedArray5);
-
-		int[] array6 = {};
-		MathUtil.sortArray(array6);
-		int[] expectedArray6 = {};
-		Assertions.assertArrayEquals(array6, expectedArray6);
 
 		int[] array7 = { 0, 0, 0, 0, 0, 0 };
 		MathUtil.sortArray(array7);
